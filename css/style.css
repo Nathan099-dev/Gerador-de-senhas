@@ -18,7 +18,7 @@ html, body{
     width: 100%;
     max-width: 400px;
     background-color: aliceblue;
-    padding: 2.5rem;
+    padding: 1rem;
 }
 
 .box h2{
@@ -40,4 +40,25 @@ html, body{
     color: purple;
     font-size: 20px;
     cursor: pointer;
+}
+
+.box .button-btn-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.box .button-btn-password button{
+    background-color: purple;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.box .button-btn-password button:hover{
+    background-color: rgb(53, 3, 53);
+    transform: .5s;
+    
 }
