@@ -13,3 +13,31 @@ html, body{
     justify-content: center;
     background-color: #282828;
 }
+
+.box{
+    width: 100%;
+    max-width: 400px;
+    background-color: aliceblue;
+    padding: 2.5rem;
+}
+
+.box h2{
+    padding: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: purple;
+}
+
+.box input{
+    padding: 5px  12px;
+    margin-right: 10px;
+    outline: none;
+    border: .5px  solid purple
+}
+
+.box i{
+    color: purple;
+    font-size: 20px;
+    cursor: pointer;
+}
