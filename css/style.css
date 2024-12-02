@@ -14,51 +14,57 @@ html, body{
     background-color: #282828;
 }
 
+
+.container{
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .box{
-    width: 100%;
-    max-width: 400px;
-    background-color: aliceblue;
-    padding: 1rem;
+   width: 100%;
+   background-color: #f0f2f5;
+   padding: 2.5rem;
 }
 
 .box h2{
-    padding: 1rem 0;
+    color: purple;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: bold;
-    color: purple;
+    margin: 1rem 0;
 }
 
-.box input{
-    padding: 5px  12px;
-    margin-right: 10px;
-    outline: none;
-    border: .5px  solid purple
-}
-
-.box i{
-    color: purple;
-    font-size: 20px;
-    cursor: pointer;
-}
-
-.box .button-btn-password {
+.box form{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
 }
 
-.box .button-btn-password button{
+.box form input{
+    width: 300px;
+    margin-right: 20px;
+    padding: 5px 12px;
+    outline: none;
+}
+
+.box form i{
+    color: purple;
+    font-size: 22px;
+    cursor: pointer;
+
+}
+
+.box button{
     background-color: purple;
     color: white;
     padding: 6px 10px;
-    border: none;
     cursor: pointer;
+    border: none;
+    margin-top: 12px;
 }
 
-.box .button-btn-password button:hover{
-    background-color: rgb(53, 3, 53);
-    transform: .5s;
-    
+.box button:hover{
+    background-color: rgb(53, 0, 53);
+    transition: .6s;
 }
