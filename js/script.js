@@ -1,16 +1,13 @@
-function gerarSenhasAleatorias(length){
-    const caracteres = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*(){}-+[]<>,.;:~^|/\='
+function gerarSenhasAleatorias(){
+    let passwordLength = 16;
+    let caracters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*(){}-=_+|/\,.<>;:[]~^'
     let password = ''
-
-    for (i = 0; i < length; i++) {
-        const randomIndex = Math.floor(Math.random() * caracteres.length);
-        password += caracteres[randomIndex]        
+    
+    for(let i = 0; i < passwordLength; i++){
+        let randomString = Math.floor(Math.random() * caracters.length);
+        password += caracters(randomString)
     }
 
-    return password;
+    document.querySelector('input').value = password;
+
 }
-
-const passwordLength = 16;
-const randomPassword = gerarSenhasAleatorias(passwordLength)
-
-
