@@ -1,13 +1,14 @@
 function gerarSenhasAleatorias(){
-    let passwordLength = 16;
     let caracters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*(){}-=_+|/\,.<>;:[]~^'
+    let passwordLength = 32;
     let password = ''
     
     for(let i = 0; i < passwordLength; i++){
-        let randomString = Math.floor(Math.random() * caracters.length);
-        password += caracters(randomString)
+        let index = Math.floor(Math.random() * caracters.length);
+        password += caracters.substring(index, index + 1)
     }
 
     document.querySelector('input').value = password;
 
 }
+
