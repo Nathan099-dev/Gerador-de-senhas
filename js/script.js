@@ -12,3 +12,13 @@ function gerarSenhasAleatorias(){
 
 }
 
+
+const copyIcon = document.querySelector('i');
+
+copyIcon.onclick = function copiarSenhaGerada(){
+    const passwordField = document.querySelector('input').value;
+    navigator.clipboard.writeText(passwordField)
+    window.alert('Snha copiada com sucesso')
+
+}
+
