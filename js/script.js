@@ -18,7 +18,7 @@ const copyIcon = document.querySelector('i');
 copyIcon.onclick = function copiarSenhaGerada(){
     const passwordField = document.querySelector('input').value;
     navigator.clipboard.writeText(passwordField)
-    window.alert('Senha copiada com sucesso')
+  
 
     const campoSenha = document.querySelector('input');
     campoSenha.style.background = 'green';
