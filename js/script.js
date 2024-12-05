@@ -20,5 +20,10 @@ copyIcon.onclick = function copiarSenhaGerada(){
     navigator.clipboard.writeText(passwordField)
     window.alert('Senha copiada com sucesso')
 
+    const campoSenha = document.querySelector('input');
+    campoSenha.style.background = 'green';
+    campoSenha.style.color = '#fff';
+    campoSenha.style.boxShadow = '3px 5px 2px 1px rgba(0, 0, 0, .2)'
+
 }
 
